@@ -147,38 +147,3 @@ export const Certifications = () => {
     </section>
   );
 };
-            <div 
-              key={index}
-              className="bg-gray-900/80 backdrop-blur-md rounded-lg overflow-hidden group hover:transform hover:translate-y-[-5px] transition-all duration-300 border border-gray-800 hover:border-green-400/50"
-            >
-              <div className="h-32 bg-gray-800 flex items-center justify-center overflow-hidden relative">
-                <img 
-                  src={cert.logo}
-                  alt={cert.provider} 
-                  className="opacity-30 absolute inset-0 w-full h-full object-cover"
-                />
-                <Award className="text-green-400 h-12 w-12 relative z-10" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold mb-2 text-white">{cert.title}</h3>
-                <div className="flex justify-between text-sm text-gray-400 mb-4">
-                  <span>{cert.provider}</span>
-                  <span>{cert.date}</span>
-                </div>
-                <a 
-                  href={cert.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-green-400 hover:text-green-300 transition-colors mt-2"
-                >
-                  <span>View Certificate</span>
-                  <ExternalLink className="h-4 w-4 ml-1" />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
