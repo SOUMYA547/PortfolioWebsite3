@@ -127,26 +127,3 @@ export const Skills = () => {
     </section>
   );
 };
-            <div 
-              key={index} 
-              className="bg-gray-900/80 backdrop-blur-md p-6 rounded-lg border border-gray-800 hover:border-green-400/50 transition-all duration-300 hover:transform hover:translate-y-[-5px] hover:shadow-lg hover:shadow-green-400/20"
-            >
-              <div className="flex items-center mb-4">
-                {skillGroup.icon}
-                <h3 className="text-xl font-bold ml-2 text-white">{skillGroup.category}</h3>
-              </div>
-              <ul className="space-y-2">
-                {skillGroup.items.map((skill, idx) => (
-                  <li key={idx} className="flex items-center">
-                    <span className="inline-block w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-                    <span className="text-gray-300">{skill}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
