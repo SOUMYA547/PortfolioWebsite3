@@ -99,7 +99,7 @@ export const Navbar = () => {
                 </a>
               ))}
               <a 
-                href="https://drive.google.com/uc?export=download&id=1ScWx4OHxIrGAh_jjoCBsQYM-5D4Ry0s7"
+                href="/New Resume (2).pdf"
                 className="inline-flex items-center bg-green-600 text-black border border-green-400 font-medium px-4 py-2 rounded hover:bg-green-500 transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -138,7 +138,7 @@ export const Navbar = () => {
             </a>
           ))}
           <a 
-            href="https://drive.google.com/uc?export=download&id=1ScWx4OHxIrGAh_jjoCBsQYM-5D4Ry0s7"
+            href="/New Resume (2).pdf"
             className="flex items-center justify-center bg-green-600 text-black border border-green-400 font-medium px-4 py-2 rounded hover:bg-green-500 transition-colors duration-200 mx-3"
             target="_blank"
             rel="noopener noreferrer"
