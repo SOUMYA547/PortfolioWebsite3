@@ -2,11 +2,10 @@ import React from 'react';
 import { Code, Database, Shield, Wifi, Terminal, Server } from 'lucide-react';
 import { TextScramble } from './TextScramble';
 import { CyberQuote } from './CyberQuote';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const Skills = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
-  const itemsPerView = 3;
+  const [isHovering, setIsHovering] = React.useState(false);
 
   const skills = [
     {
@@ -41,19 +40,23 @@ export const Skills = () => {
     }
   ];
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => 
-      prev + itemsPerView >= skills.length ? 0 : prev + itemsPerView
-    );
-  };
+  React.useEffect(() => {
+    let interval: NodeJS.Timeout;
+    if (isHovering) {
+      interval = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % skills.length);
+      }, 2000);
+    }
+    return () => clearInterval(interval);
+  }, [isHovering, skills.length]);
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => 
-      prev === 0 ? Math.max(0, skills.length - itemsPerView) : Math.max(0, prev - itemsPerView)
-    );
+  const getVisibleSkills = () => {
+    const visible = [];
+    for (let i = 0; i < 3; i++) {
+      visible.push(skills[(currentIndex + i) % skills.length]);
+    }
+    return visible;
   };
-
-  const visibleSkills = skills.slice(currentIndex, currentIndex + itemsPerView);
 
   return (
     <section id="skills" className="py-16 bg-black/70 relative">
@@ -69,28 +72,15 @@ export const Skills = () => {
 
         <CyberQuote />
 
-        <div className="relative">
-          <div className="flex items-center justify-between mb-4">
-            <button
-              onClick={prevSlide}
-              className="p-2 rounded-full bg-green-600/20 text-green-400 hover:bg-green-600/30 transition-all duration-300 shadow-lg shadow-green-400/20"
-              disabled={currentIndex === 0}
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="p-2 rounded-full bg-green-600/20 text-green-400 hover:bg-green-600/30 transition-all duration-300 shadow-lg shadow-green-400/20"
-              disabled={currentIndex + itemsPerView >= skills.length}
-            >
-              <ChevronRight className="h-6 w-6" />
-            </button>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {visibleSkills.map((skillGroup, index) => (
+        <div 
+          className="relative overflow-hidden"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-1000 ease-in-out">
+            {getVisibleSkills().map((skillGroup, index) => (
               <div 
-                key={currentIndex + index} 
+                key={`${skillGroup.category}-${currentIndex}-${index}`}
                 className="bg-gray-900/80 backdrop-blur-md p-6 rounded-lg border border-green-400/30 hover:border-green-400/70 transition-all duration-300 hover:transform hover:translate-y-[-5px] hover:shadow-lg hover:shadow-green-400/40 glow-border"
               >
                 <div className="flex items-center mb-4">
@@ -110,12 +100,12 @@ export const Skills = () => {
           </div>
           
           <div className="flex justify-center mt-6 space-x-2">
-            {Array.from({ length: Math.ceil(skills.length / itemsPerView) }).map((_, index) => (
+            {skills.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index * itemsPerView)}
+                onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  Math.floor(currentIndex / itemsPerView) === index
+                  currentIndex === index
                     ? 'bg-green-400 shadow-lg shadow-green-400/50'
                     : 'bg-gray-600 hover:bg-green-400/50'
                 }`}

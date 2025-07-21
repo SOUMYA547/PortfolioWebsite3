@@ -2,11 +2,10 @@ import React from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import { TextScramble } from './TextScramble';
 import { CyberQuote } from './CyberQuote';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export const Projects = () => {
   const [currentIndex, setCurrentIndex] = React.useState(0);
-  const itemsPerView = 3;
+  const [isHovering, setIsHovering] = React.useState(false);
 
   const projects = [
     {
@@ -53,19 +52,23 @@ export const Projects = () => {
     }
   ];
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => 
-      prev + itemsPerView >= projects.length ? 0 : prev + itemsPerView
-    );
-  };
+  React.useEffect(() => {
+    let interval: NodeJS.Timeout;
+    if (isHovering) {
+      interval = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % projects.length);
+      }, 2500);
+    }
+    return () => clearInterval(interval);
+  }, [isHovering, projects.length]);
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => 
-      prev === 0 ? Math.max(0, projects.length - itemsPerView) : Math.max(0, prev - itemsPerView)
-    );
+  const getVisibleProjects = () => {
+    const visible = [];
+    for (let i = 0; i < 3; i++) {
+      visible.push(projects[(currentIndex + i) % projects.length]);
+    }
+    return visible;
   };
-
-  const visibleProjects = projects.slice(currentIndex, currentIndex + itemsPerView);
 
   return (
     <section id="projects" className="py-16 bg-black/60 relative">
@@ -81,28 +84,15 @@ export const Projects = () => {
 
         <CyberQuote />
 
-        <div className="relative">
-          <div className="flex items-center justify-between mb-4">
-            <button
-              onClick={prevSlide}
-              className="p-2 rounded-full bg-green-600/20 text-green-400 hover:bg-green-600/30 transition-all duration-300 shadow-lg shadow-green-400/20"
-              disabled={currentIndex === 0}
-            >
-              <ChevronLeft className="h-6 w-6" />
-            </button>
-            <button
-              onClick={nextSlide}
-              className="p-2 rounded-full bg-green-600/20 text-green-400 hover:bg-green-600/30 transition-all duration-300 shadow-lg shadow-green-400/20"
-              disabled={currentIndex + itemsPerView >= projects.length}
-            >
-              <ChevronRight className="h-6 w-6" />
-            </button>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {visibleProjects.map((project, index) => (
+        <div 
+          className="relative overflow-hidden"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-1000 ease-in-out">
+            {getVisibleProjects().map((project, index) => (
               <div 
-                key={currentIndex + index}
+                key={`${project.title}-${currentIndex}-${index}`}
                 className="bg-gray-900/80 backdrop-blur-sm rounded-lg overflow-hidden group hover:transform hover:translate-y-[-5px] transition-all duration-300 border border-green-400/30 hover:border-green-400/70 hover:shadow-lg hover:shadow-green-400/40 glow-border"
               >
                 <div className="h-48 overflow-hidden">
@@ -150,12 +140,12 @@ export const Projects = () => {
           </div>
           
           <div className="flex justify-center mt-6 space-x-2">
-            {Array.from({ length: Math.ceil(projects.length / itemsPerView) }).map((_, index) => (
+            {projects.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentIndex(index * itemsPerView)}
+                onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  Math.floor(currentIndex / itemsPerView) === index
+                  currentIndex === index
                     ? 'bg-green-400 shadow-lg shadow-green-400/50'
                     : 'bg-gray-600 hover:bg-green-400/50'
                 }`}
