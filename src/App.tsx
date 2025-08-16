@@ -12,6 +12,7 @@ import { ScrollToTop } from './components/ScrollToTop';
 import { PasswordStrength } from './components/PasswordStrength';
 import { VirusScan } from './components/VirusScan';
 import { VisitorConsole } from './components/VisitorConsole';
+import { InteractiveTerminal } from './components/InteractiveTerminal';
 
 function App() {
   const [showVirusScan, setShowVirusScan] = useState(true);
@@ -53,6 +54,7 @@ function App() {
           <Footer />
           <ScrollToTop />
           <VisitorConsole />
+          <InteractiveTerminal />
         </div>
       )}
     </div>
