@@ -48,6 +48,13 @@ export const Projects = () => {
       image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
     },
     {
+      title: 'AI Fraud Detection System',
+      description: 'Advanced AI-powered fraud detection system utilizing machine learning algorithms to identify and prevent fraudulent activities in real-time.',
+      link: 'https://www.linkedin.com/posts/soumyakantamahapatra_cybersecurity-vulnerabilityassessment-infotactsolutions-activity-7333069356584620032-nQhl?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoQ2YgBDgXIJuC2ACPV8AVPOG2J40dERrk',
+      technologies: ['AI/ML', 'Fraud Detection', 'Python', 'Data Analysis'],
+      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
+    },
+    {
       title: 'Vulnerability Assessment',
       description: 'Comprehensive vulnerability assessment project conducted during internship at Infotact Solutions.',
       link: 'https://www.linkedin.com/posts/soumyakantamahapatra_cybersecurity-vulnerabilityassessment-infotactsolutions-activity-7333069356584620032-nQhl',
