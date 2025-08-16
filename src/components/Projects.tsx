@@ -41,6 +41,13 @@ export const Projects = () => {
       image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
     },
     {
+      title: 'Secure Linux Server Setup Hardening',
+      description: 'Comprehensive Linux server hardening toolkit implementing security best practices, system configurations, and automated security measures.',
+      github: 'https://github.com/SOUMYA547/Secure-Linux-Server-Setup-Hardening',
+      technologies: ['Linux', 'Shell Scripting', 'System Security', 'Server Hardening'],
+      image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
+    },
+    {
       title: 'Vulnerability Assessment',
       description: 'Comprehensive vulnerability assessment project conducted during internship at Infotact Solutions.',
       link: 'https://www.linkedin.com/posts/soumyakantamahapatra_cybersecurity-vulnerabilityassessment-infotactsolutions-activity-7333069356584620032-nQhl',

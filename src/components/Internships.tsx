@@ -38,14 +38,6 @@ export const Internships = () => {
       skills: ['Azure Security', 'AI Systems', 'Cloud Protection']
     },
     {
-      title: 'Artificial Intelligence Intern',
-      company: 'All India Council for Technical Education (AICTE)',
-      period: '2025',
-      type: 'Remote',
-      description: 'Developed machine learning models for anomaly detection in network traffic. Implemented AI-based threat intelligence systems.',
-      skills: ['Machine Learning', 'Anomaly Detection', 'Threat Intelligence']
-    },
-    {
       title: 'Cybersecurity Research Intern',
       company: 'All India Council for Technical Education (AICTE)',
       period: '2025',
