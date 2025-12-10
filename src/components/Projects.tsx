@@ -29,7 +29,7 @@ export const Projects = () => {
     {
       title: 'Anonymous FTP Scanner',
       description: 'Finds public FTP servers so administrators can secure exposed data and prevent unauthorized access.',
-      github: 'https://github.com/SOUMYA547/Anonymous-FTP-Scanner',
+      github: 'https://github.com/SOUMYA547/Defence_Tools/blob/main/Anonymous_FTP_Scanner.py',
       technologies: ['Python', 'Network Security', 'FTP Analysis'],
       image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
     },
