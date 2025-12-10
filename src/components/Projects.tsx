@@ -13,6 +13,13 @@ export const Projects = () => {
       image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
     },
     {
+      title: 'AI Fraud Detection System',
+      description: 'Advanced AI-powered system for detecting and preventing fraudulent activities using machine learning algorithms and real-time analysis.',
+      link: 'https://www.linkedin.com/posts/soumyakantamahapatra_cybersecurity-vulnerabilityassessment-infotactsolutions-activity-7333069356584620032-nQhl?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoQ2YgBDgXIJuC2ACPV8AVPOG2J40dERrk',
+      technologies: ['AI/ML', 'Fraud Detection', 'Python', 'Data Analysis'],
+      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
+    },
+    {
       title: 'Password Cracker',
       description: 'Advanced password cracking tool for security testing and vulnerability assessment of password-protected systems.',
       github: 'https://github.com/SOUMYA547/Password-Cracker',

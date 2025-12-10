@@ -29,7 +29,16 @@ export const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col items-center text-center">
           <div className="mb-6 flex justify-center">
-            <Shield className="h-20 w-20 text-green-400" />
+            <div className="relative">
+              <img 
+                src="/portfolio.jpg" 
+                alt="Soumyakanta Mahapatra" 
+                className="w-32 h-32 rounded-full border-4 border-green-400 shadow-lg shadow-green-400/20 object-cover"
+              />
+              <div className="absolute -bottom-2 -right-2 bg-green-400 rounded-full p-2">
+                <Shield className="h-6 w-6 text-black" />
+              </div>
+            </div>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-2">
             <TextScramble text="Soumyakanta Mahapatra" className="glitch-text" />
