@@ -6,60 +6,60 @@ import { CyberQuote } from './CyberQuote';
 export const Projects = () => {
   const projects = [
     {
-      title: 'Defence Tools',
-      description: 'A comprehensive toolkit for defensive cybersecurity measures, providing various utilities for system hardening and protection.',
-      github: 'https://github.com/SOUMYA547/Defence_Tools',
-      technologies: ['Python', 'Linux', 'Shell Scripting'],
-      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
-    },
-    {
-      title: 'Image Encryptor',
-      description: 'Advanced tool for encrypting and securing image files using state-of-the-art cryptographic algorithms.',
-      github: 'https://github.com/SOUMYA547/Image-Encryptor',
-      technologies: ['Python', 'Cryptography', 'Image Processing'],
-      image: 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg'
-    },
-    {
-      title: 'Text Encryptor',
-      description: 'Secure text encryption tool implementing modern encryption standards for data protection.',
-      github: 'https://github.com/SOUMYA547/Text-Encryptor',
-      technologies: ['Python', 'Cryptography', 'Security'],
-      image: 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg'
-    },
-    {
-      title: 'Password Analyzer',
-      description: 'Tool to analyze password strength and security, identifying vulnerabilities and providing recommendations.',
-      github: 'https://github.com/SOUMYA547/Password_Analyzer',
-      technologies: ['Python', 'Cryptography', 'Pattern Analysis'],
-      image: 'https://images.pexels.com/photos/39624/padlock-lock-chain-key-39624.jpeg'
-    },
-    {
-      title: 'Password Generator',
-      description: 'Secure password generation tool creating strong, unique passwords based on customizable parameters.',
-      github: 'https://github.com/SOUMYA547/Password-Generator',
-      technologies: ['Python', 'Cryptography', 'Random Generation'],
-      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
-    },
-    {
       title: 'Secure Linux Server Setup Hardening',
       description: 'Comprehensive Linux server hardening toolkit implementing security best practices, system configurations, and automated security measures.',
       github: 'https://github.com/SOUMYA547/Secure-Linux-Server-Setup-Hardening',
-      technologies: ['Linux', 'Shell Scripting', 'System Security', 'Server Hardening'],
+      technologies: ['Kali Linux', 'Virtual Machine', 'System Security', 'Server Hardening'],
+      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+    },
+    {
+      title: 'Password Cracker',
+      description: 'Advanced password cracking tool for security testing and vulnerability assessment of password-protected systems.',
+      github: 'https://github.com/SOUMYA547/Password-Cracker',
+      technologies: ['Python', 'Cryptography', 'Security Testing'],
+      image: 'https://images.pexels.com/photos/39624/padlock-lock-chain-key-39624.jpeg'
+    },
+    {
+      title: 'Anonymous FTP Scanner',
+      description: 'Finds public FTP servers so administrators can secure exposed data and prevent unauthorized access.',
+      github: 'https://github.com/SOUMYA547/Anonymous-FTP-Scanner',
+      technologies: ['Python', 'Network Security', 'FTP Analysis'],
       image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
     },
     {
-      title: 'AI Fraud Detection System',
-      description: 'Advanced AI-powered fraud detection system utilizing machine learning algorithms to identify and prevent fraudulent activities in real-time.',
-      link: 'https://www.linkedin.com/posts/soumyakantamahapatra_cybersecurity-vulnerabilityassessment-infotactsolutions-activity-7333069356584620032-nQhl?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoQ2YgBDgXIJuC2ACPV8AVPOG2J40dERrk',
-      technologies: ['AI/ML', 'Fraud Detection', 'Python', 'Data Analysis'],
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
+      title: 'Brute Force FTP Accounts',
+      description: 'Tests FTP passwords (with permission) to find weak credentials and improve security posture.',
+      github: 'https://github.com/SOUMYA547/Brute-Force-FTP',
+      technologies: ['Python', 'Brute Force', 'FTP Security'],
+      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
     },
     {
-      title: 'Vulnerability Assessment',
-      description: 'Comprehensive vulnerability assessment project conducted during internship at Infotact Solutions.',
-      link: 'https://www.linkedin.com/posts/soumyakantamahapatra_cybersecurity-vulnerabilityassessment-infotactsolutions-activity-7333069356584620032-nQhl',
-      technologies: ['Nmap', 'OpenVAS', 'Vulnerability Analysis'],
+      title: 'Port Scanner',
+      description: 'Discovers open ports so users can close unnecessary services and improve system security.',
+      github: 'https://github.com/SOUMYA547/Port-Scanner',
+      technologies: ['Python', 'Network Analysis', 'Port Scanning'],
       image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+    },
+    {
+      title: 'Find Deleted Files',
+      description: 'Restores deleted documents and photos for digital forensics and data recovery purposes.',
+      github: 'https://github.com/SOUMYA547/Find-Deleted-Files',
+      technologies: ['Python', 'Digital Forensics', 'Data Recovery'],
+      image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
+    },
+    {
+      title: 'Keylogger',
+      description: 'Logs keystrokes for consented usability testing or monitoring purposes in controlled environments.',
+      github: 'https://github.com/SOUMYA547/Keylogger',
+      technologies: ['Python', 'System Monitoring', 'Security Testing'],
+      image: 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg'
+    },
+    {
+      title: 'File Password Cracker',
+      description: 'Recovers access to your own password-protected files for legitimate recovery purposes.',
+      github: 'https://github.com/SOUMYA547/File-Password-Cracker',
+      technologies: ['Python', 'File Security', 'Password Recovery'],
+      image: 'https://images.pexels.com/photos/39624/padlock-lock-chain-key-39624.jpeg'
     }
   ];
 
