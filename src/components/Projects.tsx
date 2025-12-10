@@ -36,35 +36,35 @@ export const Projects = () => {
     {
       title: 'Brute Force FTP Accounts',
       description: 'Tests FTP passwords (with permission) to find weak credentials and improve security posture.',
-      github: 'https://github.com/SOUMYA547/Brute-Force-FTP',
+      github: 'https://github.com/SOUMYA547/Defence_Tools/blob/main/Brute_Force_FTP_Accounts.py',
       technologies: ['Python', 'Brute Force', 'FTP Security'],
       image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
     },
     {
       title: 'Port Scanner',
       description: 'Discovers open ports so users can close unnecessary services and improve system security.',
-      github: 'https://github.com/SOUMYA547/Port-Scanner',
+      github: 'https://github.com/SOUMYA547/Defence_Tools/blob/main/Port_Scanner.py',
       technologies: ['Python', 'Network Analysis', 'Port Scanning'],
       image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
     },
     {
       title: 'Find Deleted Files',
       description: 'Restores deleted documents and photos for digital forensics and data recovery purposes.',
-      github: 'https://github.com/SOUMYA547/Find-Deleted-Files',
+      github: 'https://github.com/SOUMYA547/Defence_Tools/blob/main/Find_Deleted_Files.py',
       technologies: ['Python', 'Digital Forensics', 'Data Recovery'],
       image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
     },
     {
       title: 'Keylogger',
       description: 'Logs keystrokes for consented usability testing or monitoring purposes in controlled environments.',
-      github: 'https://github.com/SOUMYA547/Keylogger',
+      github: 'https://github.com/SOUMYA547/Defence_Tools/blob/main/Keylogger.py',
       technologies: ['Python', 'System Monitoring', 'Security Testing'],
       image: 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg'
     },
     {
       title: 'File Password Cracker',
       description: 'Recovers access to your own password-protected files for legitimate recovery purposes.',
-      github: 'https://github.com/SOUMYA547/File-Password-Cracker',
+      github: 'https://github.com/SOUMYA547/File_Password_Cracker.py',
       technologies: ['Python', 'File Security', 'Password Recovery'],
       image: 'https://images.pexels.com/photos/39624/padlock-lock-chain-key-39624.jpeg'
     }
