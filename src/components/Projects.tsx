@@ -20,6 +20,27 @@ export const Projects = () => {
       image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
     },
     {
+      title: 'Image Encryptor',
+      description: 'Secure image encryption tool that protects sensitive visual data using advanced encryption algorithms and cryptographic techniques.',
+      github: 'https://github.com/SOUMYA547/Image-Encryptor',
+      technologies: ['Python', 'Encryption', 'Image Processing', 'Cryptography'],
+      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+    },
+    {
+      title: 'Text Encryptor',
+      description: 'Robust text encryption application that secures confidential messages and documents using strong encryption standards.',
+      github: 'https://github.com/SOUMYA547/Text-Encryptor',
+      technologies: ['Python', 'Encryption', 'Text Security', 'Cryptography'],
+      image: 'https://images.pexels.com/photos/39624/padlock-lock-chain-key-39624.jpeg'
+    },
+    {
+      title: 'Bluetooth Chat App',
+      description: 'Secure Bluetooth-based chat application enabling encrypted peer-to-peer communication for private messaging.',
+      github: 'https://github.com/SOUMYA547/Bluetooth-Chat-App/tree/main/BluetoothChatApp',
+      technologies: ['Android', 'Bluetooth', 'Java', 'Secure Communication'],
+      image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
+    },
+    {
       title: 'Password Cracker',
       description: 'Advanced password cracking tool for security testing and vulnerability assessment of password-protected systems.',
       github: 'https://github.com/SOUMYA547/Password-Cracker',
