@@ -6,7 +6,7 @@ import { CyberQuote } from './CyberQuote';
 export const Hero = () => {
   const [text, setText] = useState('');
   const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const fullText = 'Ethical Hacker & Cybersecurity Enthusiast';
+  const fullText = 'Ethical Hacking Learner & Cybersecurity Enthusiast';
 
   useEffect(() => {
     let index = 0;
@@ -51,10 +51,10 @@ export const Hero = () => {
           </div>
           <div className="max-w-2xl mb-8 text-gray-300">
             <p className="text-lg mb-4">
-              As a motivated and enthusiastic individual, I am eager to embark on my professional journey and gain valuable experience in DSA/AI/ML/Cyber Security.
+              Hii, I am Soumyakanta Mahapatra. Doing B.Tech CSE from KIIT University Bhubaneswar. As a motivated and enthusiastic individual, I am eager to embark on my learning journey and trying to gain valuable experience in DSA/AI/ML/Cyber Security.
             </p>
             <p className="text-lg">
-              While I may not have formal work experience, I bring a strong foundation of skills, a passion for learning, and a dedication to positively contributing to any team.
+              While I may not have formal work experience, I am trying to bring a strong foundation of skills, a passion for learning, and a dedication to positively contributing to any team.
             </p>
           </div>
           <CyberQuote />
