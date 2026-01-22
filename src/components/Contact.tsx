@@ -65,8 +65,8 @@ export const Contact = () => {
           <div className="bg-gray-900/80 backdrop-blur-md p-6 rounded-lg border border-gray-800">
             <h3 className="text-xl font-bold mb-6 text-white border-b border-gray-700 pb-2">Direct Contact</h3>
             <div className="space-y-4">
-              <a 
-                href="mailto:manaswininayak616@gmail.com" 
+              <a
+                href="mailto:soumyakantamahapatraixa959648@gmail.com"
                 className="flex items-center text-gray-300 hover:text-green-400 transition-colors duration-200 group"
               >
                 <div className="bg-gray-800 p-3 rounded-full mr-4 group-hover:bg-green-400/20 transition-colors duration-200">
@@ -74,7 +74,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <div className="text-sm text-gray-500">Email</div>
-                  <div>manaswininayak616@gmail.com</div>
+                  <div>soumyakantamahapatraixa959648@gmail.com</div>
                 </div>
               </a>
               <a 

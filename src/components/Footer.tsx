@@ -33,8 +33,8 @@ export const Footer = () => {
             >
               <Linkedin className="h-5 w-5" />
             </a>
-            <a 
-              href="mailto:manaswininayak616@gmail.com" 
+            <a
+              href="mailto:soumyakantamahapatraixa959648@gmail.com"
               className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-green-400 hover:bg-gray-700 transition-colors duration-200"
             >
               <Mail className="h-5 w-5" />

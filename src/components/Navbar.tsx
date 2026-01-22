@@ -98,8 +98,8 @@ export const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <a 
-                href="/new_resume(4).pdf"
+              <a
+                href="/perfect_resume_2.pdf"
                 className="inline-flex items-center bg-green-600 text-black border border-green-400 font-medium px-4 py-2 rounded hover:bg-green-500 transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -137,8 +137,8 @@ export const Navbar = () => {
               {item.name}
             </a>
           ))}
-          <a 
-            href="/new_resume(4).pdf"
+          <a
+            href="/perfect_resume_2.pdf"
             className="flex items-center justify-center bg-green-600 text-black border border-green-400 font-medium px-4 py-2 rounded hover:bg-green-500 transition-colors duration-200 mx-3"
             target="_blank"
             rel="noopener noreferrer"
