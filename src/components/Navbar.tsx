@@ -99,7 +99,7 @@ export const Navbar = () => {
                 </a>
               ))}
               <a 
-                href="/new_resume(4).pdf"
+                href="/Resume_3.pdf"
                 className="inline-flex items-center bg-green-600 text-black border border-green-400 font-medium px-4 py-2 rounded hover:bg-green-500 transition-colors duration-200"
                 target="_blank"
                 rel="noopener noreferrer"
