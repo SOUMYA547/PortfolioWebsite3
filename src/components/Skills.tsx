@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Database, Shield, Wifi, Terminal, Server } from 'lucide-react';
+import { Code, Database, Shield, Wifi, Terminal, Server, Brain, Cloud, Zap } from 'lucide-react';
 import { TextScramble } from './TextScramble';
 import { CyberQuote } from './CyberQuote';
 
@@ -8,7 +8,27 @@ export const Skills = () => {
     {
       category: 'Programming Languages',
       icon: <Code className="h-6 w-6 text-green-400" />,
-      items: ['C++', 'C', 'Java', 'Python']
+      items: ['C/C++', 'Java', 'Python', 'HTML, CSS & JS']
+    },
+    {
+      category: 'Database',
+      icon: <Database className="h-6 w-6 text-green-400" />,
+      items: ['SQL', 'Oracle SQL', 'MySQL', 'PostgreSQL']
+    },
+    {
+      category: 'AI & Machine Learning',
+      icon: <Brain className="h-6 w-6 text-green-400" />,
+      items: ['TensorFlow', 'PyTorch', 'Jupyter Notebook', 'Scikit-learn']
+    },
+    {
+      category: 'Software Development Tools',
+      icon: <Zap className="h-6 w-6 text-green-400" />,
+      items: ['Visual Studio Code', 'Git', 'Docker', 'Postman']
+    },
+    {
+      category: 'Cloud Services',
+      icon: <Cloud className="h-6 w-6 text-green-400" />,
+      items: ['AWS', 'Azure', 'Google Cloud Platform']
     },
     {
       category: 'Penetration Testing',
@@ -29,11 +49,6 @@ export const Skills = () => {
       category: 'Operating Systems',
       icon: <Server className="h-6 w-6 text-green-400" />,
       items: ['Linux', 'Windows', 'Kali Linux']
-    },
-    {
-      category: 'Database',
-      icon: <Database className="h-6 w-6 text-green-400" />,
-      items: ['SQL', 'Database Security', 'Injection Prevention']
     }
   ];
 

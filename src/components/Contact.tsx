@@ -5,45 +5,20 @@ import { CyberQuote } from './CyberQuote';
 
 export const Contact = () => {
   const platforms = [
-    { 
-      name: 'LinkedIn', 
-      url: 'https://www.linkedin.com/in/soumyakantamahapatra/', 
-      icon: <Linkedin className="w-6 h-6" /> 
+    {
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/soumyakantamahapatra/',
+      icon: <Linkedin className="w-6 h-6" />
     },
-    { 
-      name: 'GitHub', 
-      url: 'https://www.github.com/SOUMYA547', 
-      icon: <Github className="w-6 h-6" /> 
+    {
+      name: 'GitHub',
+      url: 'https://www.github.com/SOUMYA547',
+      icon: <Github className="w-6 h-6" />
     },
-    { 
-      name: 'CodeChef', 
-      url: 'https://www.codechef.com/users/soumya547', 
-      icon: <Code2 className="w-6 h-6" /> 
-    },
-    { 
-      name: 'HackerRank', 
-      url: 'https://www.hackerrank.com/profile/manaswininayak61', 
-      icon: <BookOpen className="w-6 h-6" /> 
-    },
-    { 
-      name: 'LeetCode', 
-      url: 'https://www.leetcode.com/soumya_547-959648', 
-      icon: <Code2 className="w-6 h-6" /> 
-    },
-    { 
-      name: 'HackerEarth', 
-      url: 'https://www.hackerearth.com/@soumyakanta12', 
-      icon: <HardDrive className="w-6 h-6" /> 
-    },
-    { 
-      name: 'GeeksForGeeks', 
-      url: 'https://www.geeksforgeeks.org/user/manaswininayak61/', 
-      icon: <Code2 className="w-6 h-6" /> 
-    },
-    { 
-      name: 'Discord', 
-      url: 'https://discord.com/users/soumya547', 
-      icon: <MessageSquare className="w-6 h-6" /> 
+    {
+      name: 'LeetCode',
+      url: 'https://www.leetcode.com/soumya_547-959648',
+      icon: <Code2 className="w-6 h-6" />
     }
   ];
 

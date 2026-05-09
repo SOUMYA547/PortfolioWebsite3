@@ -34,6 +34,27 @@ export const Projects = () => {
       image: 'https://images.pexels.com/photos/39624/padlock-lock-chain-key-39624.jpeg'
     },
     {
+      title: 'AI Powered Stock Analysis System',
+      description: 'Autonomous AI agent leveraging advanced LLM reasoning for real-time market analysis and intelligent trading execution.',
+      github: 'https://github.com/SOUMYA547/Agentic-AI-Powered-Stock-Analysis-System',
+      technologies: ['AI/ML', 'LLM', 'Finance', 'Python'],
+      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
+    },
+    {
+      title: 'Software Vulnerability Detection System',
+      description: 'Advanced system for detecting and identifying software vulnerabilities using machine learning and code analysis.',
+      github: 'https://github.com/SOUMYA547/Software-Vulnerability-Detection-System',
+      technologies: ['Python', 'ML', 'Security Analysis', 'Code Scanning'],
+      image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+    },
+    {
+      title: 'Autonomous Incident Commander',
+      description: 'Intelligent incident response system that autonomously manages and resolves security incidents with minimal human intervention.',
+      github: 'https://github.com/SOUMYA547/Autonomous-Incident-Commander',
+      technologies: ['AI', 'Incident Response', 'Automation', 'Security'],
+      image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
+    },
+    {
       title: 'Bluetooth Chat App',
       description: 'Secure Bluetooth-based chat application enabling encrypted peer-to-peer communication for private messaging.',
       github: 'https://github.com/SOUMYA547/Bluetooth-Chat-App/tree/main/BluetoothChatApp',

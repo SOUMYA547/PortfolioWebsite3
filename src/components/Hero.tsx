@@ -49,12 +49,15 @@ export const Hero = () => {
               {!isTypingComplete && <span className="animate-pulse">|</span>}
             </h2>
           </div>
-          <div className="max-w-2xl mb-8 text-gray-300">
+          <div className="max-w-3xl mb-8 text-gray-300">
             <p className="text-lg mb-4">
-              Hii, I am Soumyakanta Mahapatra. Doing B.Tech CSE from KIIT University Bhubaneswar. As a motivated and enthusiastic individual, I am eager to embark on my learning journey and trying to gain valuable experience in DSA/AI/ML/Cyber Security.
+              Hii, I am Soumyakanta Mahapatra, currently pursuing a B.Tech in Computer Science Engineering from KIIT University, Bhubaneswar. As a motivated and enthusiastic individual, I am eager to grow in the fields of Software Development, AI/ML, and Cyber Security while gaining valuable practical experience.
+            </p>
+            <p className="text-lg mb-4">
+              I have a strong passion for continuous learning and a dedication to contributing positively to any team. I am also interested in working on AI/ML research projects integrated with security solutions to help prevent potential problems and improve intelligent problem-solving systems.
             </p>
             <p className="text-lg">
-              While I may not have formal work experience, I am trying to bring a strong foundation of skills, a passion for learning, and a dedication to positively contributing to any team.
+              Additionally, I regularly enhance my knowledge and stay updated with modern technologies using AI tools such as ChatGPT, Gemini, Perplexity, and Claude. I also actively solve problems on LeetCode and participate in hackathons to improve my problem-solving, development, and teamwork skills.
             </p>
           </div>
           <CyberQuote />

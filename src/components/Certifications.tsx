@@ -6,46 +6,67 @@ import { CyberQuote } from './CyberQuote';
 export const Certifications = () => {
   const certifications = [
     {
-      title: 'Cisco Cybersecurity Specialization',
-      provider: 'Coursera',
-      date: '2024',
-      link: 'https://www.coursera.org/account/accomplishments/specialization/CFVLBNF3532I',
-      logo: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
-    },
-    {
-      title: 'Palo Alto Networks Cybersecurity Specialization',
-      provider: 'Coursera',
-      date: '2024',
-      link: 'https://www.coursera.org/account/accomplishments/specialization/9D6KE9DCBQPX',
-      logo: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
-    },
-    {
-      title: 'Microsoft IT Support Specialization',
-      provider: 'Coursera',
+      title: 'Generative AI for Software Development',
+      provider: 'Deep Learning',
       date: '2025',
-      link: 'https://www.coursera.org/account/accomplishments/specialization/F1RX7W0AW0ZS',
-      logo: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
+      link: 'https://coursera.org/share/926a03c6e19b980d2b08d78c7c6ef469',
+      logo: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
     },
     {
-      title: 'Microsoft Cybersecurity Specialization',
-      provider: 'Coursera',
-      date: '2023',
-      link: 'https://www.coursera.org/account/accomplishments/specialization/GWV5WG6AUU99',
-      logo: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
+      title: 'Microsoft AI & ML Engineering',
+      provider: 'Microsoft',
+      date: '2025',
+      link: 'https://coursera.org/share/c0e917d50bcdf22d1b6abc84e69a4547',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
     },
     {
-      title: 'Google IT Support Specialization',
-      provider: 'Coursera',
+      title: 'Machine Learning',
+      provider: 'Deep Learning & Stanford University',
       date: '2023',
-      link: 'https://www.coursera.org/account/accomplishments/specialization/QMFC7F55B4RS',
-      logo: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
+      link: 'https://coursera.org/share/b89d7838ff294a36ccad4ce44b1bfcf0',
+      logo: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
     },
     {
-      title: 'Google Cybersecurity Specialization',
-      provider: 'Coursera',
+      title: 'Data Structures and Algorithms',
+      provider: 'UC San Diego',
+      date: '2024',
+      link: 'https://coursera.org/share/2fa7e5073ad72b97430e683670e72890',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+    },
+    {
+      title: 'Algorithms',
+      provider: 'Stanford University',
+      date: '2024',
+      link: 'https://coursera.org/share/ec1026f121bfa297ac08462bf62f0cf1',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+    },
+    {
+      title: 'Natural Language Processing',
+      provider: 'Deep Learning',
+      date: '2024',
+      link: 'https://coursera.org/share/cf98392002add0ce7b2c38781aa4fb98',
+      logo: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
+    },
+    {
+      title: 'Intel AI Fundamentals',
+      provider: 'Intel',
+      date: '2024',
+      link: 'https://coursera.org/share/7eb0d34cb39ea76fb3d06ac2da9dca13',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+    },
+    {
+      title: 'Deep Learning',
+      provider: 'Deep Learning',
       date: '2023',
-      link: 'https://www.coursera.org/account/accomplishments/specialization/W5PMY7HWRHRM',
-      logo: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg'
+      link: 'https://coursera.org/share/d5b0b846d39c3b16c510b158eb68866e',
+      logo: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg'
+    },
+    {
+      title: 'Microsoft Copilot: Your Everyday AI Companion',
+      provider: 'Microsoft',
+      date: '2024',
+      link: 'https://coursera.org/share/e5065c4e9dd2144fd8b6d7fa927752ee',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
     }
   ];
 
