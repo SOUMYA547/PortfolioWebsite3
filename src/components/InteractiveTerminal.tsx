@@ -61,7 +61,7 @@ export const InteractiveTerminal = () => {
         case 'contact.txt':
           return [
             'Contact Information:',
-            'Email: soumyakantamahapatraixa959648@gmail.com',
+            'Email: manaswininayak616@gmail.com',
             'Phone: 9438714694',
             'LinkedIn: linkedin.com/in/soumyakantamahapatra/',
             'GitHub: github.com/SOUMYA547'
@@ -149,7 +149,7 @@ export const InteractiveTerminal = () => {
       'Total: 12 security projects'
     ],
     contact: () => [
-      '📧 Email: soumyakantamahapatraixa959648@gmail.com',
+      '📧 Email: manaswininayak616@gmail.com',
       '📱 Phone: 9438714694',
       '💼 LinkedIn: linkedin.com/in/soumyakantamahapatra/',
       '🐙 GitHub: github.com/SOUMYA547',
