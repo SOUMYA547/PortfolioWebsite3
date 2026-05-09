@@ -67,7 +67,49 @@ export const Certifications = () => {
       date: '2024',
       link: 'https://coursera.org/share/e5065c4e9dd2144fd8b6d7fa927752ee',
       logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
-    }
+    },
+    {
+      title: 'Google Cybersecurity',
+      provider: 'Google',
+      date: '2023',
+      link: 'https://www.coursera.org/account/accomplishments/professional-cert/W5PMY7HWRHRM',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+},
+{
+      title: 'Google IT Support',
+      provider: 'Google',
+      date: '2023',
+      link: 'https://www.coursera.org/account/accomplishments/professional-cert/QMFC7F55B4RS',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+},
+{
+      title: 'Microsoft Cybersecurity Analyst',
+      provider: 'Microsoft',
+      date: '2023',
+      link: 'https://www.coursera.org/account/accomplishments/professional-cert/GWV5WG6AUU99',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+},
+{
+      title: 'Palo Alto Networks Cybersecurity',
+      provider: 'Palo Alto Networks',
+      date: '2024',
+      link: 'https://www.coursera.org/account/accomplishments/professional-cert/9D6KE9DCBQPX',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+},
+{
+      title: 'Cybersecurity Operations Fundamentals',
+      provider: 'Cisco',
+      date: '2025',
+      link: 'https://www.coursera.org/account/accomplishments/specialization/CFVLBNF3532I',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+},
+{
+      title: 'Microsoft IT Support Specialist',
+      provider: 'Microsoft',
+      date: '2025',
+      link: 'https://coursera.org/share/8aab81c351513ede65eb86aa4ca979f3',
+      logo: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+}
   ];
 
   return (
