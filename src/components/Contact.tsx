@@ -53,6 +53,30 @@ export const Contact = () => {
                 </div>
               </a>
               <a 
+                href="mailto:soumyakantamahapatraixa959648@gmail.com" 
+                className="flex items-center text-gray-300 hover:text-green-400 transition-colors duration-200 group"
+              >
+                <div className="bg-gray-800 p-3 rounded-full mr-4 group-hover:bg-green-400/20 transition-colors duration-200">
+                  <Mail className="h-6 w-6 text-green-400" />
+                </div>
+                <div>
+                  <div className="text-sm text-gray-500">Email</div>
+                  <div>soumyakantamahapatraixa959648@gmail.com</div>
+                </div>
+              </a>
+              <a 
+                href="mailto:23052276@kiit.ac.in" 
+                className="flex items-center text-gray-300 hover:text-green-400 transition-colors duration-200 group"
+              >
+                <div className="bg-gray-800 p-3 rounded-full mr-4 group-hover:bg-green-400/20 transition-colors duration-200">
+                  <Mail className="h-6 w-6 text-green-400" />
+                </div>
+                <div>
+                  <div className="text-sm text-gray-500">Email</div>
+                  <div>23052276@kiit.ac.in</div>
+                </div>
+              </a>
+              <a 
                 href="tel:9438714694" 
                 className="flex items-center text-gray-300 hover:text-green-400 transition-colors duration-200 group"
               >
