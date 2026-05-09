@@ -13,15 +13,24 @@ export const Hero = () => {
     const typingInterval = setInterval(() => {
       setText(fullText.substring(0, index));
       index++;
-      
+
       if (index > fullText.length) {
         clearInterval(typingInterval);
         setIsTypingComplete(true);
       }
     }, 100);
-    
+
     return () => clearInterval(typingInterval);
   }, []);
+
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/Resume_3.pdf';
+    link.download = 'Soumyakanta_Mahapatra_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
   return (
     <section id="home" className="pt-24 pb-16 min-h-screen flex items-center relative overflow-hidden">
@@ -62,14 +71,13 @@ export const Hero = () => {
           </div>
           <CyberQuote />
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="Resume_3.pdf"
-              download="Soumyakanta_Mahapatra_Resume.pdf"
-              className="bg-green-600 hover:bg-green-700 text-black px-6 py-3 rounded-md font-medium transition-colors duration-300 flex items-center"
+            <button
+              onClick={handleDownloadResume}
+              className="bg-green-600 hover:bg-green-700 text-black px-6 py-3 rounded-md font-medium transition-colors duration-300 flex items-center cursor-pointer"
             >
               <Download className="mr-2 h-5 w-5" />
               <span>Download Resume</span>
-            </a>
+            </button>
             <a
               href="#projects"
               className="bg-transparent hover:bg-green-900/30 text-green-400 border border-green-400 px-6 py-3 rounded-md font-medium transition-colors duration-300 flex items-center"
